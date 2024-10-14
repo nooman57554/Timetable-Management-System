@@ -62,13 +62,10 @@ Installation
 
 
 Step 1: Clone the Repository
-
-
-
  ```bash
    git clone https://github.com/nooman57554/timetable-management-system.git
    cd timetable-management-system
-
+```
 
 Step 2: Setup the Database
 
@@ -86,7 +83,7 @@ Using the Command Line
 
 ```bash
   mysql -u your_username -p timetable_management < database.sql
-
+```
 
 Replace your_username with your MySQL username.
 
@@ -102,10 +99,13 @@ Using Built-in PHP Server
 
 ```bash
   php -S localhost:8000
-
+```
 
 Step 4: Access the System
 
 
-1. Open your web browser and go to: http://localhost:8000
+1. Open your web browser and go to:
+```
+   http://localhost:8000
+```
 
