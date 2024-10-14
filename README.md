@@ -10,9 +10,7 @@ A **web-based timetable management system** built using **HTML, CSS, JavaScript,
 - [System Requirements](#system-requirements)  
   - [Software](#software)  
   - [Hardware](#hardware)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Contact](#contact)  
+- [Installation](#installation)   
 
 ---
 
@@ -57,3 +55,57 @@ A **web-based timetable management system** built using **HTML, CSS, JavaScript,
    ```bash
    git clone https://github.com/your-username/timetable-management-system.git
    cd timetable-management-system
+
+Here is the Markdown code for the installation guide:
+
+Installation
+
+
+Step 1: Clone the Repository
+
+
+
+ ```bash
+   git clone https://github.com/nooman57554/timetable-management-system.git
+   cd timetable-management-system
+
+
+Step 2: Setup the Database
+
+
+Using phpMyAdmin
+
+1. Open phpMyAdmin in your web browser.
+2. Click on the Databases tab and create a new database (e.g., timetable_management).
+3. Select the newly created database.
+4. Click on the Import tab.
+5. Choose the database.sql file from your project directory and click Go.
+
+Using the Command Line
+
+
+```bash
+  mysql -u your_username -p timetable_management < database.sql
+
+
+Replace your_username with your MySQL username.
+
+Step 3: Start the Server
+
+
+Using XAMPP or WAMP
+
+1. Start the Apache server from the control panel.
+
+Using Built-in PHP Server
+
+
+```bash
+  php -S localhost:8000
+
+
+Step 4: Access the System
+
+
+1. Open your web browser and go to: http://localhost:8000
+
