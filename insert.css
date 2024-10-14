@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#body2 {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Full height of the viewport */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2vh;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5vh;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 90%;
+    padding: 0.5vh 1vw;
+    margin-bottom: 0.5vh;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.5vh;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" stroke="%23333"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3m13 0l4-4m0 0l-4-4m4 4h-6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1vw center;
+    background-size: 2vh;
+    padding-right: 3vw;
+}
+
+.message,
+.error-message {
+    padding: 1.5vh 1.5vw;
+    color: green;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    font-size: 1.6vh;
+    margin-bottom: 1.5vh;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.4vh;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 90%;
+    padding: 1.5vh 1vw;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.6vh;
+    margin-bottom: 2vh;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.batch-field,
+.lab-assistant-field {
+    display: none;
+}
+
+.hide_confirm {
+    display: none;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-left: 1vw;
+}
+
+/* Error and Warning Containers */
+#error-messages,
+#warnings {
+    display: none;
+    max-height: 30vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    padding: 2vh 2vw;
+    margin: 1vh 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+#error-messages {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+#warnings {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+}
+
+#error-messages ul,
+#warnings ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#error-messages li,
+#warnings li {
+    padding: 0.8vh 0;
+    border-bottom: 1px solid #f5c6cb;
+    color: #721c24;
+    font-size: 1.4vh;
+}
+
+#error-messages li:last-child,
+#warnings li:last-child {
+    border-bottom: none;
+}
+
+#error-messages .close-btn,
+#warnings .close-btn {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    background-color: #990a18;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8vh;
+    cursor: pointer;
+    padding: 0.5vh 1vw;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+#error-messages .close-btn:hover,
+#warnings .close-btn:hover {
+    background-color: #d70f23;
+}
+
+/* Form and Timetable Layout */
+#form-container {
+    width: 25vw; /* Narrow column for the form */
+    margin-right: 2vw; /* Space between form and timetable */
+}
+
+#timetable-container {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable scrolling for the timetable */
+}
+
+#class-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0vh; /* Vertical gap between form elements */
+    max-height: 90vh; /* Ensure the form is within the screen height */
+    overflow-y: auto; /* Enable scrolling within the form if needed */
+    padding: 1vh 1vw;
+}
