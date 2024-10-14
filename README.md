@@ -51,23 +51,14 @@ A **web-based timetable management system** built using **HTML, CSS, JavaScript,
 ---
 
 ## Installation  
-1. **Clone the repository**:  
-   ```bash
-   git clone https://github.com/your-username/timetable-management-system.git
-   cd timetable-management-system
 
-Here is the Markdown code for the installation guide:
-
-Installation
-
-
-Step 1: Clone the Repository
+Step 1: **Clone the Repository** :
  ```bash
    git clone https://github.com/nooman57554/timetable-management-system.git
    cd timetable-management-system
 ```
 
-Step 2: Setup the Database
+Step 2: **Setup the Database** :
 
 
 Using phpMyAdmin
@@ -87,7 +78,7 @@ Using the Command Line
 
 Replace your_username with your MySQL username.
 
-Step 3: Start the Server
+Step 3: **Start the Server** :
 
 
 Using XAMPP or WAMP
@@ -96,12 +87,11 @@ Using XAMPP or WAMP
 
 Using Built-in PHP Server
 
-
 ```bash
   php -S localhost:8000
 ```
 
-Step 4: Access the System
+Step 4: **Access the System** :
 
 
 1. Open your web browser and go to:
